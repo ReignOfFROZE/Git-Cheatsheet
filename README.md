@@ -66,3 +66,5 @@ To then unstash those changes (essentially popping the changes onto whatever bra
 ```
 git stash pop
 ```
+
+One note, a lot of things revolving around rebasing and merging will probably require what is known as a **force push** to be able to be pushed to GitHub, this isn't as scary as it sounds, and can be done trivially by just adding the `-f` flag to your `git push` command
