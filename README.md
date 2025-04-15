@@ -1,5 +1,7 @@
 # Cheatsheet
 
+It is important to note that there are many ways of doing the same things in Git, and the ones outlined in this guide are just a small subset of the many ways you can manage a repository using Git.
+
 Clone a repo that you own:
 ```
 git clone git@github.com:ReignOfFROZE/Learning.git
@@ -28,6 +30,24 @@ Push files to GitHub:
 git push -u origin branchname
 # If this is not the first time and the branches are already linked, use this variant
 git push
+```
+
+Branch management:
+```
+# See branches and what branch you have active. Use arrow keys to navigate and press 'q' to quit.
+git branch 
+# Check out a new branch from the branch you're currently on
+git checkout -b newBranch
+# Check out a new branch from changes on another branch
+git checkout -b newBranch anotherBranch
+# Switch to another pre-existing branch
+git checkout anotherBranch
+# Switch to another branch but do not attempt to update anything about the other branch (safer way to switch between pre-existing branches)
+git switch anotherBranch
+# Delete a local branch
+git branch -D branchName
+# Delete a remote branch
+git push remotename --delete branchName
 ```
 
 Different ways to pull files from other repositories/your repository
