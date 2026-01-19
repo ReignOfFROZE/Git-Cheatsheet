@@ -2,7 +2,7 @@
 
 It is important to note that there are many ways of doing the same things in Git, and the ones outlined in this guide are just a small subset of the many ways you can manage a repository using Git.
 
-Clone a repo that you own:
+Clone a repo that you own (or that you have access to. This requires you having an ssh key in your GitHub account that your ssh agent is using):
 ```
 git clone git@github.com:ReignOfFROZE/Learning.git
 ```
